@@ -326,55 +326,9 @@
     @media (max-width: 1200px) {
       display: block;
       margin-right: 10px;
-      
-      &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 200%; 
-        height: 200%; 
-        background: radial-gradient(
-          circle,
-          rgba(255, 255, 255, 0.3),
-          transparent
-        );
-        transform: translate(-50%, -50%) scale(0.8); 
-        border-radius: 50%;
-        z-index: 0;
-      }
-      
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        
-        &:before {
-          opacity: 0.4; 
-        }
-        
-        ion-icon {
-          color: #00ccff;
-          transform: rotate(180deg) scale(1.2); 
-          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4)); 
-        }
-      }
-      
-      &:active {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-        
-        &:before {
-          opacity: 0.2; 
-        }
-        
-        ion-icon {
-          color: #ffcc00;
-          transform: rotate(-180deg) scale(1.05); 
-          filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3)); 
-        }
-      }
     }
   }
+  
   
   
 
