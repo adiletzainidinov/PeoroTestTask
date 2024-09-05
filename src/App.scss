@@ -331,64 +331,60 @@
 
 // sideBar
 .sideBar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 100%;
-  background-color: #333;
-  color: #fff;
-  overflow-x: hidden;
-  transition: width 0.3s ease;
-  z-index: 1000;
-  display: none;
-
-  .sideBarContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-
-    .sideBarItem {
-      font-size: 18px;
-      color: #fff;
-      margin: 20px 0;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: #ff0066;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;  // по умолчанию скрыт
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    
+    // Стиль для открытого состояния
+    &.open {
+      width: 250px;  // ширина для открытого состояния
+    }
+  
+    .sideBarContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px;
+  
+      .sideBarItem {
+        font-size: 18px;
+        color: #fff;
+        margin: 20px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #ff0066;
+        }
       }
     }
-  }
-
-  @media (max-width: 1200px) {
-    display: block;
-    &.open {
-      width: 250px;
-    }
-
+  
+    // Адаптивные стили
     @media (max-width: 768px) {
-      width: 0;
-      transition: width 0.3s ease;
-
+      &.open {
+        width: 200px;
+      }
+  
       .sideBarContent {
         padding: 10px;
-
+  
         .sideBarItem {
           font-size: 16px;
           margin: 10px 0;
         }
       }
-
-      &.open {
-        width: 200px;
-      }
     }
   }
-}
+  
 
 .burgerMeny {
   cursor: pointer;
