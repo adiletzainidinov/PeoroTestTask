@@ -26,7 +26,7 @@
 // logoParents
 
 .logoParents {
-    margin-left: 10px;
+  margin-left: 10px;
   .logo {
     font-size: 50px;
     font-weight: 500;
@@ -310,27 +310,24 @@
 // burgerMeny
 
 .burgerMeny {
-    display: none;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    
-    ion-icon {
-      font-size: 30px;
-      color: #333;
-      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
-    }
-    
-    // Адаптивные стили
-    @media (max-width: 1200px) {
-      display: block;
-      margin-right: 10px;
-    }
+  display: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 30px;
+    color: #333;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
   }
-  
-  
-  
+
+  // Адаптивные стили
+  @media (max-width: 1200px) {
+    display: block;
+    margin-right: 10px;
+  }
+}
 
 // sideBar
 .sideBar {
@@ -367,12 +364,11 @@
     }
   }
 
-  &.open {
-    width: 250px;
-  }
-
   @media (max-width: 1200px) {
     display: block;
+    &.open {
+      width: 250px;
+    }
 
     @media (max-width: 768px) {
       width: 0;
