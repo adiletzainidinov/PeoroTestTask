@@ -8,15 +8,15 @@ const Header = () => {
   const [isKatalogBurgerOpen, setisKatalogBurgerOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsSidebarOpen((prev) => !prev);
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   const toggleKatalog = () => {
-    setIsKatalogOpen((prev) => !prev);
+    setIsKatalogOpen(!isKatalogOpen);
   };
 
   const toggleKatalogBurger = () => {
-    setisKatalogBurgerOpen((prev) => !prev);
+    setisKatalogBurgerOpen(!isKatalogBurgerOpen);
   };
 
   const headerNavData = [
